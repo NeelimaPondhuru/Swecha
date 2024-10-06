@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <style> 
+         .box{
+                background-color:rgb(88, 205, 228);
+                border-radius: 9px;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                color: white;
+                box-shadow: 5px 5px 1px rgb(88, 205, 228);
+                font-family: 'Times New Roman', Times, serif;
+                padding-top: 10px;
+                padding-right: 15px;
+                padding-left: 10px;
+                padding-bottom: 30px;
+            }
+            .name{
+                border-width: 0px;
+                border-color: rgba(40, 194, 224, 0.453);
+                border-radius: 9px;
+                padding-left: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            .sub{
+                margin-top: 9px;
+                border-width: 0px;
+                border-radius: 9px;
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                transition: background-color 1s,color 1s;
+            }
+           .container {
+                border:1px solid;
+                padding: 30px 30px 30px 30px ;
+                border-radius: 5px;
+            }   
+            .res ,
+            .com {
+                background-color: rgb(71, 184, 232);
+                color:white;
+                font-weight: bold;
+                margin: 10px;
+                border-width: 0px;
+                border-radius: 9px;
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 10px;
+                padding-bottom: 10px;  
+            }   
+        </style>
+    </head>
+    <body >
+        <div class="container">
+            <div class="row ">
+                <div class="d-none d-md-block col-md-2">
+                    <img class="img-fluid " src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Swechalogo.png/640px-Swechalogo.png"></div>
+                <div class="col-md-8  pt-3 bg-primary-subtle pb-3 bg-primary-subtle border border-primary-subtle border border-1 rounded-end rounded-start text-center mt-2 display-sm-6 text-sm-dark h5">SWECHA AP ONLINE INTERNSHIP 2023</div>
+                <div class="d-none d-md-block col-md-2">
+                    <img class="img-fluid pt-3" src="https://balaswecha.in/images/logo.png">
+                </div>
+            </div>
+        </div><i>
+        <div class="container">
+            <div class="text-center fs-3 m-1 text-muted">Web App Development</div>
+            <div id="container"><center>
+                <form class="box" id="form" name="theform" style="text-align: center;">
+                    <h5>LOG IN</h5>
+                    <label onclick="alert('please enter your name')" for="userName">Name     : </label>
+                    <input type="text" class="name" id="userName" onkeyup="checkform()" required="true"><br>
+                    <input type="submit" id="btn" class="sub" onclick=start() disabled >
+                </form></center>
+            </div>
+        </div>
+        <div id="quiz" class="entire">
+            <div class="container" id="q1" >
+                <p >Q.1  &nbsp; HTML stands for __________</p>
+                <input  type="radio" name="html" onclick="wrong1()">HyperText MakingLanguage<br>
+                <input  type="radio" name="html" onclick="wrong1()">Hyperlinks and Text MarkupLanguage<br>
+                <input  type="radio" name="html" onclick="right1()">HyperText MarkUpLanguage<br>
+                <input  type="radio" name="html" onclick="wrong1()">HyperTool MakupLanguage<br><br>
+            </div>
+            <div class="container" id="q2">
+                <p >Q.2  &nbsp; Who is making the WEB standards ?</p>
+                <input  type="radio" name="html1" onclick="wrong2()">Mozilla<br>
+                <input  type="radio" name="html1" onclick="right2()">The WWW consortium<br>
+                <input  type="radio" name="html1" onclick="wrong2()">Microsoft<br>
+                <input  type="radio" name="html1" onclick="wrong2()">Google<br><br>
+            </div>
+            <div class="container" id="q3">
+                <p >Q.3  &nbsp; Which input type defines a slider control ?</p>
+                <input  type="radio" name="html1" onclick="wrong3()">controls<br>
+                <input type="radio" name="html1" onclick="wrong3()">slider<br>
+                <input  type="radio" name="html1" onclick="wrong3()">value<br>
+                <input  type="radio" name="html1" onclick="right3()">range<br><br>
+            </div>
+            <div class="container" id="q4">
+                <p >Q.4  &nbsp; Which of these is not associated with HTML ?</p>
+                <input  type="radio" name="html1" onclick="right4()">Python<br>
+                <input  type="radio" name="html1" onclick="wrong4()">CSS<br>
+                <input  type="radio" name="html1" onclick="wrong4()">Ruby<br>
+                <input  type="radio" name="html1" onclick="wrong4()">JavaScript<br><br>
+            </div>
+            <div class="container" id="q5">
+                <p id>Q.5  &nbsp; In HTML , which attribute is used to specify that an input field must be filled ?</p>
+                <input type="radio" name="html1" onclick="wrong5()">placeholder<br>
+                <input type="radio" name="html1" onclick="wrong5()">validate<br>
+                <input type="radio" name="html1" onclick="right5()">required<br>
+                <input type="radio" name="html1" onclick="wrong5()">selected<br><br>
+            </div>
+            <div class="container" id="q6">
+                <p>Q.6  &nbsp; Which CSS property is used to get rounded border ?</p>
+                <input type="radio" name="html1" onclick="wrong6()">border<br>
+                <input type="radio" name="html1" onclick="right6()">border-radius<br>
+                <input type="radio" name="html1" onclick="wrong6()">box-shadow<br>
+                <input type="radio" name="html1" onclick="wrong6()">border-width<br><br>
+            </div>
+            <div class="container" id="q7">
+                <p>Q.7  &nbsp;  Which HTML attribute is used to define inline styles ?</p>
+                <input type="radio" name="html1" onclick="wrong7()">class<br>
+                <input type="radio" name="html1" onclick="wrong7()">styles<br>
+                <input type="radio" name="html1" onclick="wrong7()">font<br>
+                <input type="radio" name="html1" onclick="right7()">style<br><br>
+            </div>
+            <div class="container" id="q8">
+                <p>Q.8  &nbsp; Which CSS property controls the text size ?</p>
+                <input type="radio" name="html1" onclick="right8()">font-size<br>
+                <input type="radio" name="html1" onclick="wrong8()">font-style<br>
+                <input type="radio" name="html1" onclick="wrong8()">text-style<br>
+                <input type="radio" name="html1" onclick="wrong8()">text-size<br><br>
+            </div>
+            <div class="container" id="q9">
+                <p>Q.9  &nbsp; How do you make each word in a text start with captical letter ?</p>
+                <input type="radio" name="html1" onclick="wrong9()">text-align<br>
+                <input type="radio" name="html1" onclick="wrong9()">transform:capitalize<br>
+                <input type="radio" name="html1" onclick="right9()">text-transform:capitalize<br>
+                <input type="radio" name="html1" onclick="wrong9()">You Can't do that with CSS<br><br>
+            </div>
+            <div class="container" id="q10">
+                <p>Q.10  &nbsp;  How do you select an element with id 'demo'?</p>
+                <input type="radio" name="html1" onclick="wrong10()">*demo<br>
+                <input type="radio" name="html1" onclick="right10()">#demo<br>
+                <input type="radio" name="html1" onclick="wrong10()">.demo<br>
+                <input type="radio" name="html1" onclick="wrong10()">demo<br><br>
+            </div>
+            <div id="buttons" style="text-align: center; margin-top: 20px;">
+                <input type="reset" class="res" value="RESET" onclick="alert('DO YOU WANT TO RESET'),res()">
+                <input type="submit" value="SUBMIT" class="com" onclick="alert('QUIZ SUBMITTED SUCCESSFULLY'),sub()">
+            </div>
+        </div>
+        </i>
+        <script>
+            let userName = document.querySelector("#userName");
+            var  quiz  = document.querySelector('#quiz');
+            quiz.style.display ="none";
+            buttons.style.display="none";
+            function checkform()
+            {
+                var f = document.forms['theform'].elements;
+                var fieldMustBeFilled = true;
+                for ( var i= 0;i<f.length ; i++) {
+                    if(f[i].value.length == 0) 
+                    fieldMustBeFilled=false;
+                }
+                if(fieldMustBeFilled === true ) {
+                    document.getElementById('btn').disabled = true;
+                }
+                else {
+                    document.getElementById('btn').disabled = false ;
+                }
+            }
+            function sub() {
+                buttons.style.display ="none";
+                form.innerHTML="Woohoo..!!! " + userName.value + " ,QUIZ SUBMITTED " +String.fromCodePoint('0x1f929');
+                quiz.style.display="none";
+            }
+            function res() {
+                buttons.style.display ="none";
+                location.reload(true);
+                
+            }
+            
+            function  start() {
+                form.innerHTML="";
+                form.innerHTML="Hey!"+ userName.value + " , Welcome" + String.fromCodePoint('0x1f917') ;
+                quiz.style.display ="block";
+                buttons.style.display="block";
+            }
+            function wrong1() {
+                q1.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right1() {
+                q1.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+            }
+            function wrong2() {
+                q2.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right2() {
+                q2.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+            }
+            function wrong3() {
+                q3.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right3() {
+                q3.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+            }
+            function wrong4() {
+                    q4.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right4() {
+                q4.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+            }
+            function wrong5() {
+                q5.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right5() {
+                q5.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+            }
+            function wrong6() {
+                q6.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right6() {
+                q6.innerHTML = String.fromCodePoint('0x1f609') +  " CORRECT !!!!!!"
+            }
+            function wrong7() {
+                q7.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right7() {
+                q7.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+            }
+            function wrong8() {
+                q8.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right8() {
+                q8.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+            }
+            function wrong9() {
+                q9.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+            }
+            function right9() {
+                q9.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+            }
+            function wrong10() {
+                q10.innerHTML = String.fromCodePoint('0x1f645') +  "  WRONG ..!"
+                
+            }
+            function right10() {
+                q10.innerHTML = String.fromCodePoint('0x1f609') +  "  CORRECT !!!!!!"
+                
+            }
+        </script>   
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            body {
+                background-image: url('logo.jpg') ;
+                background-size:contain;
+                background-repeat:no-repeat;background-position: center;
+            }
+            .layout {
+                    border: 2px solid rgb(183, 235, 28);
+                    border-radius: 15px;
+                    background: rgba(217, 30, 211, 0.2);
+                    margin: 0px 100px 45px 100px;
+                    box-shadow: 2px 2px 5px rgb(243, 239, 119);
+            }
+            .img {
+                border:none;
+                box-shadow: 0px 0px 2px rgb(91, 238, 38);;
+                margin: 30px;
+                margin-top: 10px;
+                margin-top: none;
+                background-color:rgba(211, 113, 247, 0.31);
+                padding: 5px ;
+                display: inline-flex;
+                width:700px;
+                border-radius: 4px;
+            }
+            .form {
+                width:700px;
+                margin: 30px;
+            }
+            .para {
+                color: rgba(148, 157, 125, 0.747);
+                margin-left: 40px;
+                margin-top: 0px;
+                font-family: arial;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            .para1 {
+                margin-left: 30px;
+                padding: 5px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-family: arial;
+                font-size: 20px;
+                font-weight:lighter;
+                color: black;
+                width:700px;
+                border-top-color: white;
+                border-radius: 4px;
+                height:fit-content;
+                box-shadow: 0px 0px 1px rgb(175, 170, 170);
+            }
+            .f ,.m ,.n  {
+                    margin-bottom: 11px;
+            }
+            .full {
+                width: 700px;
+                padding: 5px;
+                margin-top: 5px;
+                margin-bottom:11px;
+                border-radius: 4px;
+                font-size: 10px;
+                border-color: rgb(209, 205, 205);
+                border-top-color:rgb(253, 252, 252) ;
+                border-left-color: rgb(243, 243, 243);
+            }
+            .drop1 {
+                width: 713px;
+                padding: 5px;
+                margin-top: 2px;
+                margin-bottom:11px;
+                border-radius: 4px;
+                font-size: 10px;
+                box-shadow: 1px 1px 1px rgb(209, 205, 205);
+                border-color: rgb(209, 205, 205);
+                border-top-color:rgba(158, 158, 158, 0.973) ;
+                border-left-color: rgb(216, 202, 202);
+            }  
+            .drop2 {
+                width: 713px;
+                padding: 5px;
+                margin-top: 2px;
+                margin-bottom:11px;
+                border-radius: 4px;
+                font-size: 10px;
+                box-shadow: 1px 1px 1px rgb(209, 205, 205);
+                border-color: rgb(209, 205, 205);
+                border-top-color:rgba(158, 158, 158, 0.973) ;
+                border-left-color: rgb(216, 202, 202);
+            }  
+            .internet ,.lap , .intern {
+                         margin: 10px 50px 20px 20px;
+            }
+            .on {
+                 margin-left: 20px;
+            }
+            .note {
+                margin-left: 0px;
+                border: 1px;
+                border-radius: 5px;
+                background-color: rgba(58, 213, 86, 0.524);
+                padding:1px 1px 1px 2px;
+                border-top-color: rgb(255, 127, 193);
+                border-left-color: rgb(185, 127, 255);
+                box-shadow: 1px 1px 1px rgb(232, 107, 243);
+                border-color: rgb(253, 120, 246,0.1);
+                margin:2px;
+            }
+            .reg {
+                margin-top: 12px;
+                background-color:rgb(77, 173, 237);
+                color:white;
+                width:100px;
+                height:35px;
+                border-radius: 8px;
+                border:none;
+                font-style: italic;
+                font-weight:bold;
+                margin-right: 8px;
+            }
+            .contact {
+                text-decoration: none;
+                text-align-last: right;
+                color:rgb(54, 114, 199) ;
+                font-style: italic;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body style="font-family: 'Lucida Sans';font-size: 15px;font-style: italic;">
+        <div class="layout">
+            <form action="https://www.instagram.com/swechaap/" method="get">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Swechalogo.png/640px-Swechalogo.png" width="187px" height="70px"> 
+                    <p class="para">Swecha AP Events</p>
+                </div>
+                <div>
+                    <p class="para1">Swecha AP Summer Internship Program 2023</p>
+                </div>
+                <div class="form">
+                    <span style="font-weight: bold;">Full Name </span><span style="color:rgb(208, 26, 233)">*</span><br>
+                    <input type="text" placeholder="Enter name As required in certificate" class="full" required="true"><br>
+                    <span style=" font-weight: bold;">Gender </span><span style="color:red">*</span><br>
+                    <input type="radio" name="gender" value="Female" class="f" required>Female
+                    <input type="radio" name="gender" value="Male" class="m">Male
+                    <input type="radio" name="gender" value="nonbinary" class="n">Non-Binary<br>
+                    <span style="font-weight: bold;">College/Organization </span><span style="color:red">*</span><br>
+                    <input type="text" class="full" required="true"><br>
+                    <span style="font-weight: bold;">Email </span><span style="color:red">*</span><br>
+                    <input type="email" placeholder="Email Address" class="full"  required="true"><br>
+                    <span style="font-weight: bold;">Mobile Number </span><span style="color:red">*</span><br>
+                    <input type="tel" class="full"  required="true"><br>
+                    <span style="font-weight: bold;">Department </span><span style="color:red">*</span><br>
+                    <select class="drop1"  required="true">
+                        <option selected disabled hidden value="" > - Select -</option>
+                        <option value="ece">Electronics and Communication Engineering</option>
+                        <option value="cse">Computer Science Engineering</option>
+                        <option value="civ">Civil Engineering</option>
+                        <option value="eee">Electronics and Electrical Engineering</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span style="font-weight: bold;">Current Year of Study </span><span style="color:red">*</span><br>
+                    <select class="drop2"  required="true">
+                        <option selected disabled hidden value=""> - Select -</option>
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>4th Year</option>
+                    </select>
+                    <span style="font-weight: bold;">Mode of Internet {choose the highest capacity if you have multiple} </span><span style="color:red">*</span><br>
+                    <div class="internet" required="true">
+                        <input type="radio" name="mode" value="band" required>Broad Band
+                        <input type="radio" name="mode" value="data" required>Mobile Data
+                        <input type="radio" name="mode" value="wifi" required >Wifi<br>
+                    </div>
+                    <span style="font-weight: bold;">Do you have a Laptop </span><span style="color:red">*</span><br>
+                    <div class="lap" required="true">
+                        <input type="radio" name="laptop"  value="yes" required >YES
+                        <input type="radio" name="laptop" value="no" required>NO
+                    </div>
+                    <span style="font-weight: bold;"> Mode of Internship </span><span style="color:red">*</span><br>
+                    <div class="intern" required="true">
+                        <input type="radio" name="intern" class="week" required> 2weeks OFFLINE + Rest ONLINE 
+                        <input type="radio" name="intern" class="on" required> ONLINE
+                    </div>
+                    <div class="note">
+                        <ul style="list-style-type:circle; font-family: 'lucida Sans';">
+                            <li>Internship includes Industry Oriented Training , Tasks , Impact Sessions</li><br>
+                            <li>Register for more details</li>
+                        </ul>
+                    </div>
+                    <center><input type="submit" value="Register" class="reg"></center>
+                    <a href="https://courses.swechaap.org/" target="_blank" class="contact">Contact us</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
